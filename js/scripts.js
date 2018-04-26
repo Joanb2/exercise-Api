@@ -6,6 +6,7 @@ button.addEventListener('click', function(){
 });
 
 var paragraph = document.getElementById('joke');
+paragraph.innerHTML = "Click this button, you don't want make HIM wait!";
 
 function getJoke() {
 	var xhr = new XMLHttpRequest();
@@ -16,5 +17,3 @@ function getJoke() {
 	});
 	xhr.send();
 }
-
-getJoke();
